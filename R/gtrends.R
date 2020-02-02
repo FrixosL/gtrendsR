@@ -124,7 +124,7 @@ gtrends <- function(
     # One  vector should be a multiple of the other
     (length(keyword) %% length(geo) == 0) || (length(geo) %% length(keyword) == 0) || (length(time) %% length(keyword) == 0),
     is.vector(keyword),
-    length(keyword) <= 5,
+    length(keyword) <= 1000,
     length(geo) <= 5,
     length(time) <= 5,
     length(hl) == 1,
